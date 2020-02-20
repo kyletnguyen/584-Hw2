@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>584 Homework 2</title>
+    <link href="./css/site.css" rel="stylesheet" type="text/css" />
+    <script src="./scripts/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="emp-form">
+      <form id="theForm">
+        <fieldset>
+          <legend id="legend-title">Add an Employee</legend>
+
+          <label for="firstname">First Name</label>
+          <br />
+          <input type="text" name="firstname" id="firstname" autofocus accesskey="F" required />
+          <br />
+
+          <label for="lastname">Last Name</label>
+          <br />
+          <input type="text" name="lastname" id="lastname" accesskey="L" required />
+          <br />
+
+          <label for="select-department">Department</label>
+          <br />
+          <select id="select-department">
+            <option value="IT">IT</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Computer Science">Computer Science</option>
+          </select>
+          <br />
+          <br />
+
+          <button type="submit" id="submit">Submit &rarr;</button>
+        </fieldset>
+      </form>
+      <div id="echo-result" class="display-none">
+        <div id="result-title">Employee Added</div>
+        <p class="data-lbl">Name: <span id="name" class="data"></span></p>
+        <p class="data-lbl">Department: <span id="department" class="data"></span></p>
+        <p class="data-lbl">Employee ID: <span id="emp-id" class="data"></span></p>
+        <p class="data-lbl">Hire Date: <span id="hire-date" class="data"></span></p>
+        <p class="data-lbl">Total Employees: <span id="total-emps" class="data"></span></p>
+      </div>
+
+      <div><img id="browser" src="./img/browser.png" /><span id="user-browser"></span></div>
+    </div>
+  </body>
+</html>
